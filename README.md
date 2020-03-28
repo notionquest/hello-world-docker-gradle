@@ -2,13 +2,13 @@
 
 Dockerise the simple Java application using gradle plugin `palantir`
 
-[palantir gradle plugin] (https://github.com/palantir/gradle-docker)
+[palantir gradle plugin](https://github.com/palantir/gradle-docker)
 
 # References:-
 
-https://github.com/docker/labs/blob/master/beginner/chapters/alpine.md
+[Docket Alpine Image](https://github.com/docker/labs/blob/master/beginner/chapters/alpine.md)
 
-https://examples.javacodegeeks.com/devops/docker/docker-hello-world-example/
+[Docker Hello World Blog](https://examples.javacodegeeks.com/devops/docker/docker-hello-world-example/)
 
 # Some useful commands:-
 
@@ -33,6 +33,6 @@ https://examples.javacodegeeks.com/devops/docker/docker-hello-world-example/
 
 ### Build Java docker images using Jib:
 
-[Google Jib Introduction Blog] https://cloudplatform.googleblog.com/2018/07/introducing-jib-build-java-docker-images-better.html
+[Google Jib Introduction Blog](https://cloudplatform.googleblog.com/2018/07/introducing-jib-build-java-docker-images-better.html)
 
-[Google Jib] (https://github.com/GoogleContainerTools/jib)
+[Google Jib](https://github.com/GoogleContainerTools/jib)
