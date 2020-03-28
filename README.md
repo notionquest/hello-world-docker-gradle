@@ -4,3 +4,30 @@
 
 https://github.com/docker/labs/blob/master/beginner/chapters/alpine.md
 https://examples.javacodegeeks.com/devops/docker/docker-hello-world-example/
+
+# Some useful commands:-
+
+To build the image:-
+
+    gradle docker
+    
+To run the image:-
+    
+    docker container run com.docker.hello/helloworld  
+    
+Expected output:-
+
+    Hello World Docker!!!    
+        
+To get the container and remove it:-    
+
+    docker ps -a
+    docker rm <container-name>  
+
+## Next Steps:-
+
+### Build Java docker images using Jib:
+
+https://cloudplatform.googleblog.com/2018/07/introducing-jib-build-java-docker-images-better.html
+
+https://github.com/GoogleContainerTools/jib

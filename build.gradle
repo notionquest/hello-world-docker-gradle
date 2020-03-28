@@ -21,8 +21,8 @@ group 'com.docker.hello'
 version '1.0-SNAPSHOT'
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_10
-    targetCompatibility = JavaVersion.VERSION_1_10
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 repositories {
@@ -51,14 +51,14 @@ test {
 apply plugin: 'com.palantir.docker'
 
 docker {
-    name 'com.docker.hello/HelloWorld:1'
-    tags 'latest'
-    dockerfile project.file('src/main/docker/Dockerfile')
+    dockerfile file('Dockerfile')
+    name 'com.docker.hello/helloworld:latest'
+    copySpec.from("build/libs").into("build/libs")
     dependsOn tasks.jar
 }
 
 dockerRun {
     name 'hello-world-docker-container'
-    image 'com.docker.hello/hello-world-docker-gradle:1'
+    image 'com.docker.hello/helloworld:latest'
     command 'java', '-Djava.security.egd=file:/dev/./urandom', '-jar', 'app.jar'
 }
