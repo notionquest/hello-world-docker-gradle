@@ -1,8 +1,11 @@
 # Dockerise the Simpla Java Application
 
-Dockerise the simple Java application using gradle plugin `palantir`
+Dockerise the simple Java application using gradle plugin `palantir`.
 
 [palantir gradle plugin](https://github.com/palantir/gradle-docker)
+
+* Java 11
+* Gradle 6.3
 
 # References:-
 
